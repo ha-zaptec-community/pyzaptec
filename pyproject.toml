@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyzaptec"
-version = "0.8.8"
+version = "0.8.7"
 description = "Python client wrapper for the Zaptec EV charging API"
 authors = [
     { name = "Svein Seldal", email = "sveinse@seldal.com" },
