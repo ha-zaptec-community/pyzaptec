@@ -34,12 +34,6 @@ jobs:
       - name: Build a source tarball and a binary wheel
         run: python -m build
 
-      - name: Download all the dists
-        uses: actions/download-artifact@v6
-        with:
-          name: python-package-distributions
-          path: dist/
-
       - name: Publish package distribution to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
