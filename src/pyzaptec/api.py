@@ -553,7 +553,7 @@ class Installation(ZaptecBase):
 
         try:
             max_current = float(self.get("max_current", DEFAULT_MAX_CURRENT))
-        except (TypeError, ValueError):
+        except TypeError, ValueError:
             max_current = DEFAULT_MAX_CURRENT
         # Make sure the arguments and values are valid
         for k, v in kwargs.items():
