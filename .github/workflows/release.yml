@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     environment:
-      name: testpypi
-      url: https://test.pypi.org/p/pyzaptec
+      name: pypi
+      url: https://pypi.org/p/pyzaptec
 
     permissions:
       id-token: write  # MANDATORY for Trusted Publishing
@@ -36,5 +36,3 @@ jobs:
 
       - name: Publish package distribution to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          repository-url: https://test.pypi.org/legacy/
